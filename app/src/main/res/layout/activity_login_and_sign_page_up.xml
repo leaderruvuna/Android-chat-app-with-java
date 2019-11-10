@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.dell.mychatcool.LoginAndSignPageUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChattCool"
+            android:textColor="#fff"
+
+            android:layout_marginTop="120dp"
+            android:textSize="50dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/Login"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="casual"
+                    android:textStyle="italic"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonlogsignstyle"
+                    android:text=" LOGIN"
+                    android:textColor="#C0C0C0"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="casual"
+                android:textStyle="italic"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#C0C0C0"
+                android:background="@drawable/buttonlogsignstyle"
+                android:text="SIGN UP"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center">
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="202dp"
+                    android:src="@mipmap/myicon"
+                    android:id="@+id/circleImageView" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="More than Chatting!!
+                    "
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:layout_marginLeft="100dp"
+                    android:text="ChattCool is there for you
+
+            "
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/textView6"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:fontFamily="casual"
+                    android:text="ONLINE
+
+                "
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />-->
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="casual"
+                    android:text="to chat with friends
+                "
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+   </ScrollView>
+</android.widget.RelativeLayout>
+

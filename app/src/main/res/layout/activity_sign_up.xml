@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.dell.mychatcool.SignUpActivity">
+
+    <include layout="@layout/app_bar_layout"
+             android:id="@+id/SignUpToolbar"
+        >
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SignUpToolbar"
+        android:gravity="center"
+        android:layout_marginTop="131dp"
+        android:id="@+id/relativeLayout4">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignUpToolbar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="ChattCool"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:textStyle="italic" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/myicon" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/SignUpEmail"
+        android:layout_alignStart="@+id/SignUpEmail"
+        android:layout_below="@+id/relativeLayout4"
+        android:background="@drawable/loginsignupinput"
+        android:drawableLeft="@drawable/usericon"
+        android:hint="Username"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/signUpProgressBar"
+        android:layout_alignLeft="@+id/SignUpPassword"
+        android:layout_alignStart="@+id/SignUpPassword"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/buttonlogsignstyle"
+        android:fontFamily="casual"
+        android:text="Sign Up"
+        android:textColor="#C0C0C0"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:fontFamily="casual"
+        android:text="Sign Up to chat with friends!"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/SignUpPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/SignUpEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/loginsignupinput"
+        android:drawableLeft="@drawable/passwordkey"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/SignUpPassword"
+        android:layout_alignStart="@+id/SignUpPassword"
+        android:layout_below="@+id/Username"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/loginsignupinput"
+        android:drawableLeft="@drawable/myemail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
+
+    <ProgressBar
+        android:id="@+id/signUpProgressBar"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/circleImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_marginBottom="23dp" />
+</android.widget.RelativeLayout>

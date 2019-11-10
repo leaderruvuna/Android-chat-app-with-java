@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item android:title="settings"
+          android:icon="@drawable/ic_settings_black_24dp"
+          android:id="@+id/setting_button"
+          app:showAsAction="never"
+        />
+
+    <item  android:title="search"
+        android:icon="@drawable/searchfriends2"
+        android:id="@+id/allusers"
+        app:showAsAction="never"
+        />
+    <item  android:title="Logout"
+        android:icon="@drawable/signout"
+        android:id="@+id/Logout_button"
+        app:showAsAction="never"
+        />
+</menu>

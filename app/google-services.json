@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "23292270507",
+    "firebase_url": "https://mychatcool.firebaseio.com",
+    "project_id": "mychatcool",
+    "storage_bucket": "mychatcool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23292270507:android:bf54429c10f2e9b2",
+        "android_client_info": {
+          "package_name": "com.example.dell.mychatcool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23292270507-chiugsjdqhurhsfvdmnjk2cgsdmbua95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.mychatcool",
+            "certificate_hash": "bef8d71bf460e4b160e75eb1413b0342d2180085"
+          }
+        },
+        {
+          "client_id": "23292270507-a5kk6r4q4md4k3juca6hl3cgjqna3ud2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHCCXUD_qcYfQQPWSftUzco1slRxgy1NY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23292270507-a5kk6r4q4md4k3juca6hl3cgjqna3ud2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

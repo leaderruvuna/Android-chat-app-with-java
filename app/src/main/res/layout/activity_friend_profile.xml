@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.mychatcool.FriendProfileActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+       <include layout="@layout/app_bar_layout">
+
+        </include>
+
+
+       <RelativeLayout
+           android:id="@+id/imageContent"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:background="#066bf1"
+           >
+
+           <TextView
+               android:id="@+id/profileUsername"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="23dp"
+               android:gravity="center"
+               android:text="Leader ruvuna"
+               android:fontFamily="casual"
+               android:textStyle="italic"
+               android:textColor="#fff"
+               android:textSize="22dp" />
+
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/followContent"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageContent"
+            android:background="#fff">
+
+        <!--
+            <Button
+                android:id="@+id/follow"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cancel_follow"
+                android:layout_alignBottom="@+id/cancel_follow"
+                android:layout_toLeftOf="@+id/cancel_follow"
+                android:layout_toStartOf="@+id/cancel_follow"
+                android:background="#066bf1"
+                android:text="Follow"
+                android:textColor="#dcdcdc" />
+
+            <Button
+                android:id="@+id/cancel_follow"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="87dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#066bf1"
+                android:text="Cancel"
+                android:textColor="#dcdcdc" />
+    -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="74dp">
+
+                <TextView
+                    android:id="@+id/profileStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_above="@+id/profileEmail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="casual"
+                    android:textStyle="italic"
+                    android:text=""
+                    android:textSize="22dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/profileStatus"
+                    android:background="#DCDCDC"
+                    android:id="@+id/view3" />
+
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView2"
+                    android:layout_alignLeft="@+id/profileStatus"
+                    android:layout_alignStart="@+id/profileStatus"
+                    android:layout_marginBottom="12dp"
+                    android:text=""
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/profileEmail"
+                    android:background="#DCDCDC" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/profileEmail"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/profileEmail"
+                    android:text=""
+                    android:textSize="18dp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/profileEmail"
+                    android:layout_toEndOf="@+id/profileStatus"
+                    android:layout_toRightOf="@+id/profileStatus"
+                    android:src="@drawable/profilemail2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_alignStart="@+id/imageView4"
+                    android:layout_alignTop="@+id/textView2"
+                    android:src="@drawable/profilephone" />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_centerHorizontal="true"
+                    android:background="#066bf1"
+                    android:text="Follow"
+                    android:textColor="#dcdcdc" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="28dp"
+                android:background="#DCDCDC" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="60dp"
+                android:background="#DCDCDC"
+                android:id="@+id/view" />
+
+            <Button
+                android:id="@+id/cancel_follow"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="28dp"
+                android:background="#066bf1"
+                android:text="Cancel"
+                android:textColor="#CdCdCd" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/avatar" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

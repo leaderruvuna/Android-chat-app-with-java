@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+
+        <item
+            android:title="Settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:id="@+id/setting_button1"
+            app:showAsAction="never"
+            />
+        <item
+            android:title="Help"
+            android:icon="@drawable/help"
+            android:id="@+id/drawerHelp"
+            app:showAsAction="never"
+        />
+         <item
+             android:title="About"
+             android:icon="@drawable/about"
+             android:id="@+id/drawerAbout"
+            app:showAsAction="never"
+        />
+
+            />
+        <item  android:title="Logout"
+            android:icon="@drawable/signout"
+            android:id="@+id/drawerlogout"
+            app:showAsAction="never"
+            />
+
+
+</menu>

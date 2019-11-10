@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.dell.mychatcool.SignUpActivity">
+    <!-- here you include the toolbar in this xml file -->
+    <!-- and then you give it an id to be targeted in the login page -->
+
+    <include layout="@layout/app_bar_layout"
+             android:id="@+id/loginToobar"
+
+        >
+
+    </include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:fontFamily="casual"
+            android:text="ChattCool"
+            android:textColor="#fff"
+            android:textSize="50dp"
+            android:textStyle="italic" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:src="@mipmap/myicon"
+        android:id="@+id/circleImageView" />
+
+
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/LoginPassword"
+        android:layout_alignLeft="@+id/LoginPassword"
+        android:layout_alignStart="@+id/LoginPassword"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/loginsignupinput"
+        android:drawableLeft="@drawable/myemail"
+        android:hint="Email"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/myLogin"
+        android:layout_alignLeft="@+id/myLogin"
+        android:layout_alignStart="@+id/myLogin"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/loginsignupinput"
+        android:drawableLeft="@drawable/passwordkey"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="casual"
+        android:text="Login to chat with friends!"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/myLogin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/buttonlogsignstyle"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:text="login"
+        android:textColor="#C0C0C0"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/loginProgressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/circleImageView"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/circleImageView"
+        android:layout_marginBottom="77dp" />
+
+    </RelativeLayout>
+
+
+</android.widget.RelativeLayout>
